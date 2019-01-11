@@ -9,7 +9,7 @@ namespace ModelEntity
     public class BaseInfo
     {
 
-        #region 数据类型转换1
+        #region 数据类型转换
         /// <summary>
         /// 转换字符串（转换失败返回空）
         /// </summary>
@@ -83,6 +83,19 @@ namespace ModelEntity
             {
 
                 return false;
+            }
+        }
+
+        private DateTime CVTDate(object obj)
+        {
+            try
+            {
+                return DateTime.Parse(obj.ToString());
+            }
+            catch 
+            {
+
+                return DateTime.Parse("1900-01-01");
             }
         }
         #endregion
