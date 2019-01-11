@@ -9,7 +9,7 @@ namespace ModelEntity
     public class BaseInfo
     {
 
-        #region 数据类型转换
+        #region 数据类型转换1
         /// <summary>
         /// 转换字符串（转换失败返回空）
         /// </summary>
